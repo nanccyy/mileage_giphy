@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: baseline;
+
+  &__image {
+   background-image: url(../../../images/logo.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 32px;
+   width: 32px;
+   margin-left: 20px;
+}
+
+  &__text {
+    text-transform: uppercase;
+    padding: 0 13.5px;
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 32px;
+  }
+}
