@@ -1,0 +1,247 @@
+@import "../../styles/vars.scss";
+@import '../../styles/mixins.scss';
+
+.services {
+  margin: 100vh calc(50% - 1232px / 2) 0 calc(50% - 1180px / 2);
+  position: relative;
+
+  &__container_s {
+    padding-right: 27px;
+  }
+
+  &__container_l {
+    margin-top: 165px;
+    padding-right: 78px;
+    padding-left: 8px;
+  }
+
+  &__container_m {
+    padding-top: 205px;
+    padding-left: 8px;
+  }
+
+  &__dot {
+    background-image: url(../../images/services/services_dot_active.svg);
+    background-size: contain;
+    height: 127px;
+    width: 127px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    z-index: -1;
+  }
+
+  &__pathSvg {
+    position: absolute;
+    z-index: -10;
+    top: calc(361px + 92px);
+    left: 261px;
+  }
+
+  &__path {
+    background-image: url(../../images/services/services__path.svg);
+    height: 1214px;
+    width: 662px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &_large-padding {
+      padding-top: 92px;
+    }
+  }
+
+  &__info {
+    padding-top: 87px;
+
+    &_extra-padding-top {
+      padding-top: 130px;
+    }
+  }
+
+  &__heading {
+    @include heading;
+    padding-bottom: 28px;
+    transition: all 0.5s;
+  }
+
+  &__text {
+    @include page-text;
+    padding-bottom: 24px;
+    transition: all 0.5s;
+  }
+
+  &__list {
+    @include page-text;
+    padding-bottom: 32px;
+  }
+
+  &__bg {
+    z-index: -1;
+    background-image: url(../../images/services/services_bg_circle.svg);
+    height: 522px;
+    width: 522px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+
+    &_initial {
+      top: -2px;
+      left: 60px;
+    }
+
+    &_reversed {
+      top: -55px;
+      left: -50px;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    & > span {
+      background-image: url(../../images/services/check_mark_blue.svg);
+      width: 14px;
+      height: 13px;
+      margin-right: 15px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 208px;
+  height: 54px;
+  border-radius: 28px;
+  border: 2px solid $highlight-color;
+  cursor: pointer;
+  background-color: $main-background-color;
+  transition: all 0.5s;
+
+  &__link {
+    font-family: "Gilroy";
+    color: $highlight-color;
+    margin-right: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s;
+  }
+
+  &__arrow {
+    background-image: url(../../images/button/button_arrow.svg);
+    width: 26px;
+    height: 6px;
+    margin-bottom: -2px;
+    background-repeat: no-repeat;
+    background-size: initial;
+    transition: all 0.5s;
+  }
+
+  &:hover > &__arrow {
+    transform: scale(1.2) translate(30%, 0);
+  }
+
+  &:hover > &__link {
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .services {
+    margin-left: 0;
+    margin-right: 0;
+
+    &__pathSvg,
+    &__dot {
+      display: none;
+    }
+
+    &__row {
+      flex-direction: column;
+      align-items: center;
+
+      &_reversed {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__container_l,
+    &__container_m,
+    &__container_s,
+    &__row_large-padding,
+    &__info_extra-padding-top {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__container {
+      padding: 60px 20px 0;
+    }
+    &__info {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+    &__heading { 
+      line-height: 110%;
+      font-size: 28px;
+    }
+
+    &__text,
+    &__list {
+      font-size: 14px;
+    }
+
+    &__imageContainer {
+      transform: scale(0.8);
+    }
+
+    &__button {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services {
+    &__imageContainer {
+      transform: scale(0.6);
+    }
+
+    &__container {
+      padding: 10px 20px;
+    }
+
+    &__text,
+    &__list {
+      font-size: 9px;
+    }
+
+    &__image {
+      max-width: 100%;
+    }
+  }
+}

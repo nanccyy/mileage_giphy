@@ -1,0 +1,155 @@
+@import "../../styles/vars.scss";
+
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &_container {
+    padding: 144px calc(50% - 1180px / 2) 200px;
+    margin-top: 100px;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider-inner-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__names {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__miniature {
+    width: 90px;
+    height: 130px;
+    object-fit: cover;
+
+    &_left {
+      margin-right: 20px;
+    }
+
+    &_right {
+      margin-left: 20px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.2px;
+    color: $highlight-color;
+    transition: all 0.5s;
+  }
+
+  &__button {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $highlight-color;
+    background-color: $main-background-color;
+    border: none;
+    position: relative;
+    padding-bottom: 9px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("./assets/arrow_active.svg");
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 8px;
+      position: absolute;
+      top: 2px;
+    }
+
+    &_next::after {
+      right: calc(-10px - 28px);
+    }
+
+    &_prev::after {
+      left: calc(-10px - 28px);
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .team {
+    &_container {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .team {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &_container {
+      padding-top: 50px;
+      margin-top: 0;
+      padding-bottom: 70px;
+    }
+
+    &__slider {
+      padding-top: 25px;
+    }
+
+    &__miniature {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .team {
+    &_container {
+      padding-top: 0px;
+      transform: translate(0, -80px);
+    }
+
+    &__gallery {
+      transform: translate(-60px, 60px);
+    }
+    &__button {
+      font-size: 10px;
+    }
+    &__name{
+     font-size: 14px; 
+    }
+  }
+}

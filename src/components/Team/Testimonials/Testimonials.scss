@@ -1,0 +1,86 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/mixins.scss";
+
+.testimonials {
+  &__name {
+    @include heading;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    transition: font-size 0.5s;
+  }
+
+  &__position {
+    @include extra-info;
+    padding-bottom: 40px;
+    transition: all 0.5s;
+  }
+
+  &__quote {
+    max-width: 550px;
+    @include page-text;
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+
+  &__contacts {
+    display: flex;
+
+
+    & > li {
+      display: flex;
+      align-items: center;
+      padding-right: 25px;
+
+      & > span {
+        display: block;
+        height: 5px;
+        width: 5px;
+        background-color: #d8d8d8;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__link {
+    @include extra-info;
+    padding-left: 9px;
+    transition: font-size 0.5s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials {
+    &__name {
+      font-size: 28px;
+    }
+
+    &__position,
+    &__quote,
+    &__link {
+      font-size: 14px;
+    }
+
+    &__quote, &__position {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials {
+    &__name {
+      font-size: 18px;
+    }
+
+    &__position,
+    &__quote,
+    &__link {
+      font-size: 9px;
+    }
+
+    &__quote, &__position {
+      padding-bottom: 15px;
+    }
+  }
+}
+

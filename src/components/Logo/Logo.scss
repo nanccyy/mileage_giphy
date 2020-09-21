@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  align-items: baseline;
+
+  &__image {
+    background-image: url(../../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+
+    &_header {
+      height: 32px;
+      width: 32px;
+      margin-left: 20px;
+    }
+
+    &_dark {
+      transform: scale(1.2);
+      background-color: #000;
+      border: 5px solid #000;
+      border-radius: 8px;
+      transition: all 0.5s;
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s;
+
+    &_header {
+      font-size: 28px;
+      line-height: 32px;
+      padding: 0 13.5px;
+    }
+
+    &_dark {
+      color: #000;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.header__logo {
+  z-index: 21;
+}

@@ -1,0 +1,33 @@
+@import '../../styles/vars.scss';
+
+.header {
+  padding: 26px calc(50% - 1140px / 2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  transition: all 1s;
+  z-index: 20;
+  background-color: transparent;
+ 
+  &_dark_bg {
+    padding-bottom: 14px;
+    background-color: #000;
+    transition: all 1s;
+  }
+  
+  &_white_bg {
+    padding-bottom: 14px;
+    background-color: $main-background-color;
+    transform: translateY(-15%);
+    transition: all 1s;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+

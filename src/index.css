@@ -1,28 +1,49 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url(./fonts/Gilroy-Medium.ttf);
   font-weight: 500;
 }
-
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url(./fonts/Gilroy-SemiBold.ttf);
   font-weight: 600;
 }
-
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url(./fonts/Gilroy-Bold.ttf);
   font-weight: 700;
 }
-
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url(./fonts/Gilroy-ExtraBold.ttf);
   font-weight: 800;
 }
+h1, h2, h3, h4, h5, h6, p, div, button, a, li, ul, nav, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
+  background-color: #fff;
+  overflow-x: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=index.css.map */

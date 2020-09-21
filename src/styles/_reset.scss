@@ -1,0 +1,29 @@
+@import './vars.scss';
+
+h1, h2, h3, h4, h5, h6, p, div, button, a, li, ul, nav, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+  background-color: $main-background-color;
+  // overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
