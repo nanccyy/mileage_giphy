@@ -48,21 +48,8 @@ export const Slider = ({ changeLink, activePointIndex }) => {
         <div
           className={classNames({
             slider__point: true,
-            slider__point_active: activePointIndex === 0
-          })}>
-          <div
-            className={classNames({
-              active: activePointIndex === 0
-            })}
-          >
-          </div>
-        </div>
-        <div
-          className={classNames({
-            slider__point: true,
             slider__point_active: activePointIndex === 1
-          })}
-        >
+          })}>
           <div
             className={classNames({
               active: activePointIndex === 1
@@ -79,6 +66,19 @@ export const Slider = ({ changeLink, activePointIndex }) => {
           <div
             className={classNames({
               active: activePointIndex === 2
+            })}
+          >
+          </div>
+        </div>
+        <div
+          className={classNames({
+            slider__point: true,
+            slider__point_active: activePointIndex === 3
+          })}
+        >
+          <div
+            className={classNames({
+              active: activePointIndex === 3
             })}
           >
           </div>

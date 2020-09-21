@@ -26,12 +26,17 @@
 
     pointer-events: none;
   }
-
-  iframe {
+  
+  &__video {
     position: absolute;
-    transform: scale(1.25);
-    width: 100%;
     height: 100vh;
-    pointer-events: none;
+    width: 100%;
+    opacity: 0;
+    object-fit: cover;
+    transition: opacity 1s;
+  }
+
+  &__video_active {
+    opacity: 0.4;
   }
 }
