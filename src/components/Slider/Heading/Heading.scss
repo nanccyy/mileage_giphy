@@ -80,21 +80,12 @@
 
 @media screen and (max-width: 500px) {
   .heading {
-    top: 25%;
     &__title {
       font-size: 25px;
     }
 
     &__text {
       padding-bottom: 120px;
-    }
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .heading {
-    &__points {
-      display: none;
     }
   }
 }
