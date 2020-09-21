@@ -4,6 +4,8 @@ import { useIntersection } from 'react-use';
 import './Banner.scss';
 import { Slider } from '../Slider/Slider';
 import { gsap, ScrollTrigger } from "gsap/all";
+import PropTypes from 'prop-types';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const videoList = [{
@@ -19,7 +21,7 @@ const videoList = [{
   name: "video2.mp4",
 }]
 
-const Banner = ({ setIsBanner, isBanner }) => {
+const Banner = ({ setIsBanner}) => {
   const [currentVideo, setCurrentVideo] = useState(1);
   const sectionRef = useRef(null);
 
@@ -115,3 +117,7 @@ const Banner = ({ setIsBanner, isBanner }) => {
 };
 
 export default Banner;
+
+Banner.propTypes = {
+  setIsBanner: PropTypes.func.isRequired
+}
