@@ -12,13 +12,16 @@ const Logo = ({ isDarkFont, open }) => {
         logo__image_dark: isDarkFont && !open
       })}
       >
-
       </div>
+
       <div className={classnames({
         logo__text: true,
         logo__text_header: true,
         logo__text_dark: isDarkFont && !open
-      })}>Upqode</div>
+      })}
+      >
+        Upqode
+      </div>
     </div>
   )
 }

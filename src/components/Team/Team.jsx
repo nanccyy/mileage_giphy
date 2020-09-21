@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import './Team.scss';
 import { Gallery } from './Gallery/Gallery';
 import testimonials from '../../api/testimonials';
 import { Testimonials } from './Testimonials/Testimonials';
+
 const lastIndex = testimonials.length;
 
 export const Team = () => {
@@ -20,6 +21,7 @@ export const Team = () => {
         setShadow2(main + 3);
       }
     }
+
     if (button === 'prev') {
       if (main === 1) {
         return;
@@ -35,17 +37,16 @@ export const Team = () => {
     <>
       <section className="team team_container" id="team">
         <div className="team__info">
-
           <Testimonials
             testimonials={testimonials}
             main={main} />
           <div className="team__slider">
             {main < lastIndex
               ? <img className="team__miniature team__miniature_left"
-                  src={testimonials.find(person => person.id === shadow1).image}
-                  alt="person_photo"
-                >
-                </img>
+                src={testimonials.find(person => person.id === shadow1).image}
+                alt="person_photo"
+              >
+              </img>
               : ''
             }
             <div className="team__slider-inner-part">
@@ -75,32 +76,37 @@ export const Team = () => {
                 <p className="team__name">
                   {main < lastIndex
                     ? testimonials.find(person => person.id === shadow1).name
-                    : ''}
+                    : ''
+                  }
                 </p>
                 <p className="team__name">
                   {main > 1
                     ? testimonials.find(person => person.id === (main - 1)).name
-                    : ''}
+                    : ''
+                  }
                 </p>
               </div>
             </div>
             {main > 1
               ? <img
-                  className="team__miniature team__miniature_right"
-                  src={testimonials.find(person => person.id === (main - 1)).image}
-                  alt="person_photo"
-                >
+                className="team__miniature team__miniature_right"
+                src={testimonials.find(person => person.id === (main - 1)).image}
+                alt="person_photo"
+              >
               </img>
-              : ''}
+              : ''
+            }
           </div>
         </div>
+        <div>
+          < Gallery
+            testimonials={testimonials}
+            main={main}
+            shadow1={shadow1}
+            shadow2={shadow2}
+          />
+        </div>
 
-        < Gallery
-          testimonials={testimonials}
-          main={main}
-          shadow1={shadow1}
-          shadow2={shadow2}
-        />
       </section>
     </>
   );

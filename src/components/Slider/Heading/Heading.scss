@@ -1,0 +1,100 @@
+@import '../../../styles/vars.scss';
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $main-background-color;
+  font-weight: 600;
+  text-align: center;
+
+  &__title {
+    font-weight: inherit;
+    font-size: 90px;
+    line-height: 111%;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 178%;
+    padding-bottom: 54px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  &__button {
+    width: 172px;
+    height: 54px;
+    border-radius: 27px;
+    border: none;
+    background-color: $highlight-color;
+    color: $main-background-color;
+    cursor: pointer;
+
+    & > a {
+      font-family: "Gilroy";
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.1px;
+      font-weight: 800;
+    }
+
+    &:hover {
+      background-color: $main-background-color;
+      border-color: $highlight-color;
+      color: $highlight-color;
+      box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    &__title {
+      font-size: 50px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    &__title {
+      font-size: 35px;
+      line-height: 25px;
+      padding-bottom: 10px;
+    }
+
+    &__text {
+      padding: 0 20px 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    top: 25%;
+    &__title {
+      font-size: 25px;
+    }
+
+    &__text {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .heading {
+    &__points {
+      display: none;
+    }
+  }
+}

@@ -2,11 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import './Footer.scss';
 import { useIntersection } from 'react-use';
 
-
 export const Footer = ({ setIsFooter }) => {
-
   const sectionRef = useRef(null);
-
   const intersection = useIntersection(sectionRef, {
     root: null,
     rootMargin: "100px",
@@ -14,7 +11,6 @@ export const Footer = ({ setIsFooter }) => {
   });
 
   useEffect(() => {
-    
     if (intersection && intersection.intersectionRatio > 0.9) {
       setIsFooter(true);
     }
@@ -52,7 +48,7 @@ export const Footer = ({ setIsFooter }) => {
               className="footer__link"
             >
               Team
-               </a>
+            </a>
           </li>
           <li className="footer__item">
             <a href="#contactUS"

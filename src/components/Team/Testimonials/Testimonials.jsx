@@ -29,6 +29,5 @@ export const Testimonials = ({ main, testimonials }) => {
         </li>
       </ul>
     </article>
-
   );
 }

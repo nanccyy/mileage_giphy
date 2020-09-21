@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import './Gallery.scss';
+
 export const Gallery = ({ testimonials, main, shadow1, shadow2 }) => {
   return (
     <div className="team__gallery gallery">
@@ -19,7 +20,6 @@ export const Gallery = ({ testimonials, main, shadow1, shadow2 }) => {
         </img>
       )}
     </div>
-
   );
 }
 

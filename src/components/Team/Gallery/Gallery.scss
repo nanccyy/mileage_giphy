@@ -54,9 +54,10 @@
 
 @media screen and (max-width: 550px) {
   .gallery {
-    width: 100%;
+    width: 300px;
     &__image {
       transform: scale(0.6);
+
       &_shadow1 {
         transform: scale(0.5);
       }

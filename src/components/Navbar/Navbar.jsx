@@ -19,13 +19,14 @@ function Navbar({ isDarkFont, open, setOpen }) {
               className={classNames({
                 nav__link: true,
                 nav__link_header: true,
+                nav__link_isActive: true,
                 nav__link_burger: open,
                 nav__link_dark: isDarkFont && !open
               })}
               onClick={()=> {setOpen(false)}}
             >
               Home
-               </a>
+            </a>
           </li>
           <li className="nav__item nav__item_header">
             <a href="#services"
@@ -38,7 +39,7 @@ function Navbar({ isDarkFont, open, setOpen }) {
               onClick={()=> {setOpen(false)}}
             >
               Services
-              </a>
+            </a>
           </li>
           <li className="nav__item nav__item_header">
             <a href="#team"
@@ -51,7 +52,7 @@ function Navbar({ isDarkFont, open, setOpen }) {
               onClick={()=> {setOpen(false)}}
             >
               Team
-               </a>
+            </a>
           </li>
           <li className="nav__item nav__item_header">
             <a href="#contactUS"
@@ -64,7 +65,7 @@ function Navbar({ isDarkFont, open, setOpen }) {
               onClick={()=> {setOpen(false)}}
             >
               Contact Us
-               </a>
+            </a>
           </li>
         </ul>
       </nav>

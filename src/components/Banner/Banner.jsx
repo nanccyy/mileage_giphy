@@ -89,21 +89,24 @@ const Banner = ({ setIsBanner, isBanner }) => {
               videoId={linkName}
               opts={opts}
               onStateChange={onVideoIsReady}
-            ></YouTube>
+            >
+            </YouTube>
           }
           {linkName === 'RQApcf6IAKY' && isBanner &&
             <YouTube
               videoId={linkName}
               opts={opts}
               onStateChange={onVideoIsReady}
-            ></YouTube>
+            >
+            </YouTube>
           }
           {linkName === 'sBWPCvdv8Bk' && isBanner &&
             <YouTube
               videoId={linkName}
               opts={opts}
               onStateChange={onVideoIsReady}
-            ></YouTube>
+            >
+            </YouTube>
           }
         </div>
       </div>
