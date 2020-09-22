@@ -22,7 +22,7 @@ export const Gallery = ({ testimonials, main, shadow1, shadow2 }) => {
       )}
     </div>
   );
-}
+};
 
 Gallery.propTypes = {
   testimonials: PropTypes.arrayOf(
@@ -32,5 +32,4 @@ Gallery.propTypes = {
   shadow1: PropTypes.number.isRequired,
   shadow2: PropTypes.number.isRequired
 }
-
 

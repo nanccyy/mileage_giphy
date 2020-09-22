@@ -1,6 +1,6 @@
 {
-  "homepage": "https://nanccyy.github.io/mileage__local",
-  "name": "mileage",
+  "homepage": "https://nanccyy.github.io/mileage_giphy",
+  "name": "mileage_giphy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

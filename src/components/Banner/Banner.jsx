@@ -79,7 +79,11 @@ const Banner = ({ setIsBanner }) => {
           }
         </div>
       </div>
-      <Slider changeLink={changeLink} activePointIndex={currentVideo} />
+      <Slider 
+      changeLink={changeLink} 
+      activePointIndex={currentVideo}
+      setActivePointIndex={setCurrentVideo}
+       />
     </>
   );
 }
