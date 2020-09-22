@@ -5,23 +5,22 @@ import './Banner.scss';
 import { Slider } from '../Slider/Slider';
 import { gsap, ScrollTrigger } from "gsap/all";
 import PropTypes from 'prop-types';
+const videoList = [{
+  id: 1,
+  address: "https://giphy.com/embed/NPP4Z7wMIf0SA",
+},
+{
+  id: 2,
+  address: "https://giphy.com/embed/99nxwvd22RZkY",
+},
+{
+  id: 3,
+  address: "https://giphy.com/embed/xqklsTVVXhPa",
+}]
 
 gsap.registerPlugin(ScrollTrigger);
 
-const videoList = [{
-  id: 1,
-  name: "video1.mp4",
-},
-{
-  id: 2,
-  name: "video2.mp4",
-},
-{
-  id: 2,
-  name: "video2.mp4",
-}]
-
-const Banner = ({ setIsBanner}) => {
+const Banner = ({ setIsBanner }) => {
   const [currentVideo, setCurrentVideo] = useState(1);
   const sectionRef = useRef(null);
 
@@ -57,63 +56,33 @@ const Banner = ({ setIsBanner}) => {
       }
     }
   }
-
+  
   return (
     <>
       <div className="banner" id="home" ref={sectionRef}>
         <div className="banner__innerWrapper" >
-          <video
-            autoPlay
-            loop
-            muted
-            preload="auto"
-            className={classNames({
-              banner__video: true,
-              banner__video_active: currentVideo === 1
-            })}>
-            <source
-              src={require(`../../videos/video1.mp4`)}
-              type="video/mp4"
-            >
-            </source>
-          </video>
-          <video
-            autoPlay
-            loop
-            muted
-            preload="auto"
-            className={classNames({
-              banner__video: true,
-              banner__video_active: currentVideo === 2
-            })}>
-            <source
-              src={require(`../../videos/video2.mp4`)}
-              type="video/mp4"
-            >
-            </source>
-          </video>
-          <video
-            autoPlay
-            loop
-            muted
-            preload="auto"
-            className={classNames({
-              banner__video: true,
-              banner__video_active: currentVideo === 3
-            })}
-          >
-            <source
-              src={require(`../../videos/video3.mp4`)}
-              type="video/mp4"
-            >
-            </source>
-          </video>
+          {
+            videoList.map(video => {
+              const { address, id } = video;
+              return <iframe
+                src={address}
+                key={id}
+                frameBorder="0"
+                className={classNames({
+                  banner__video: true,
+                  banner__video_active: currentVideo === video.id,
+                })}
+                allowFullScreen
+              >
+              </iframe>
+            })
+          }
         </div>
       </div>
       <Slider changeLink={changeLink} activePointIndex={currentVideo} />
     </>
   );
-};
+}
 
 export default Banner;
 

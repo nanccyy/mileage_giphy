@@ -39,7 +39,7 @@ const Header = ({ isBanner, isSmallScreen, scrolled }) => {
 export default Header;
 
 Header.propTypes = {
-  isBanner: PropTypes.bool.isRequired,
+  isBanner: PropTypes.bool,
   isSmallScreen: PropTypes.bool.isRequired,
   scrolled: PropTypes.bool.isRequired,
 }
