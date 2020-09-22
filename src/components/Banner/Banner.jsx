@@ -41,7 +41,6 @@ const Banner = ({ setIsBanner}) => {
 
   const changeLink = (event) => {
     const buttonName = event.target.name;
-    console.log(currentVideo)
     if (buttonName === 'left') {
       if (currentVideo > 1) {
         setCurrentVideo(currentVideo - 1);
