@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mileage_giphy/precache-manifest.68bc7b6d476e204bde565656656653dd.js"
+  "/mileage_giphy/precache-manifest.1137db907a2b813cb048aeee3e19ae0d.js"
 );
 
 self.addEventListener('message', (event) => {

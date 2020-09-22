@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mileage_giphy/static/css/main.81c42894.chunk.css",
-    "main.js": "/mileage_giphy/static/js/main.b4ab36cf.chunk.js",
-    "main.js.map": "/mileage_giphy/static/js/main.b4ab36cf.chunk.js.map",
+    "main.css": "/mileage_giphy/static/css/main.28df572f.chunk.css",
+    "main.js": "/mileage_giphy/static/js/main.99251fce.chunk.js",
+    "main.js.map": "/mileage_giphy/static/js/main.99251fce.chunk.js.map",
     "runtime-main.js": "/mileage_giphy/static/js/runtime-main.1b38f931.js",
     "runtime-main.js.map": "/mileage_giphy/static/js/runtime-main.1b38f931.js.map",
     "static/js/2.7c66a31d.chunk.js": "/mileage_giphy/static/js/2.7c66a31d.chunk.js",
     "static/js/2.7c66a31d.chunk.js.map": "/mileage_giphy/static/js/2.7c66a31d.chunk.js.map",
     "index.html": "/mileage_giphy/index.html",
-    "precache-manifest.68bc7b6d476e204bde565656656653dd.js": "/mileage_giphy/precache-manifest.68bc7b6d476e204bde565656656653dd.js",
+    "precache-manifest.1137db907a2b813cb048aeee3e19ae0d.js": "/mileage_giphy/precache-manifest.1137db907a2b813cb048aeee3e19ae0d.js",
     "service-worker.js": "/mileage_giphy/service-worker.js",
-    "static/css/main.81c42894.chunk.css.map": "/mileage_giphy/static/css/main.81c42894.chunk.css.map",
+    "static/css/main.28df572f.chunk.css.map": "/mileage_giphy/static/css/main.28df572f.chunk.css.map",
     "static/js/2.7c66a31d.chunk.js.LICENSE.txt": "/mileage_giphy/static/js/2.7c66a31d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/mileage_giphy/static/media/Gilroy-SemiBold.05bdf30b.ttf",
     "static/media/Team.scss": "/mileage_giphy/static/media/arrow_active.cdce98e1.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.1b38f931.js",
     "static/js/2.7c66a31d.chunk.js",
-    "static/css/main.81c42894.chunk.css",
-    "static/js/main.b4ab36cf.chunk.js"
+    "static/css/main.28df572f.chunk.css",
+    "static/js/main.99251fce.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ea870a1161899844a7fa593ff7b34b6",
+    "revision": "929c5f23d9a4f6eecd2573d8e0f1ae70",
     "url": "/mileage_giphy/index.html"
   },
   {
-    "revision": "cd7c0031a2433f37e319",
-    "url": "/mileage_giphy/static/css/main.81c42894.chunk.css"
+    "revision": "1833c139c3425432cb08",
+    "url": "/mileage_giphy/static/css/main.28df572f.chunk.css"
   },
   {
     "revision": "6c307428254fa4d50d1e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mileage_giphy/static/js/2.7c66a31d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd7c0031a2433f37e319",
-    "url": "/mileage_giphy/static/js/main.b4ab36cf.chunk.js"
+    "revision": "1833c139c3425432cb08",
+    "url": "/mileage_giphy/static/js/main.99251fce.chunk.js"
   },
   {
     "revision": "4fde1fad321d6ee51e01",
