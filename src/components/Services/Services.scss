@@ -232,13 +232,17 @@
       transform: scale(0.6);
     }
 
+    &__info {
+      padding-top: 0px;
+      margin-top: -60px;
+    } 
     &__container {
       padding: 10px 20px;
     }
 
     &__text,
     &__list {
-      font-size: 9px;
+      font-size: 10px;
     }
 
     &__image {

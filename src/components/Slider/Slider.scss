@@ -81,7 +81,16 @@
     padding: 0 30px;
   }
 }
+
 @media screen and (max-height: 500px) {
+  .slider {
+    &__points {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
   .slider {
     &__points {
       display: none;
